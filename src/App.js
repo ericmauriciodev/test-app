@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { useState } from 'react';
+
+import Path from './componentes/Path';
+import Button from './componentes/Enviar';
 
 function App() {
+  const [names, setName] = useState() // setName === names = @
+  const [lastNames, setLastName] = useState()
+
+  const [result, setResult] = useState("e")
+
+  console.log(names, lastNames, result)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <div>{result}</div>
+      <div>
+      <input onChange={e => setName(e.target.value)} type="text" name='name' placeholder='nombre'></input>
+      </div>
+      <input onChange={e => setLastName(e.target.value)} type="text" name='lastName' placeholder='apellido'></input>
+      <div>
+      <Button nombre={"enviar"} onCLick={() => setResult(`${names} ${lastNames}`)} type="submit" />
+      
+
+      </div>
     </div>
   );
 }
