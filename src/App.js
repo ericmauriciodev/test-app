@@ -3,7 +3,7 @@ import './App.css';
 import { useState } from 'react';
 
 import Path from './componentes/Path';
-import Button from './componentes/Enviar';
+import Button from './componentes/boton';
 
 function App() {
   const [names, setName] = useState() // setName === names = @
