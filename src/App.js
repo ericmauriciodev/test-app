@@ -21,6 +21,11 @@ function App() {
       <input onChange={e => setLastName(e.target.value)} type="text" name='lastName' placeholder='apellido'></input>
       <div>
       <Button nombre={"enviar"} onCLick={() => setResult(`${names} ${lastNames}`)} type="submit" />
+      <Button nombre={"enviar"} onCLick={() => setResult(`${names} ${lastNames}`)} type="submit" />
+      <Button nombre={"enviar"} onCLick={() => setResult(`${names} ${lastNames}`)} type="submit" />
+      <Button nombre={"enviar"} onCLick={() => setResult(`${names} ${lastNames}`)} type="submit" />
+      <Button nombre={"enviar"} onCLick={() => setResult(`${names} ${lastNames}`)} type="submit" />
+      <Button nombre={"enviar"} onCLick={() => setResult(`${names} ${lastNames}`)} type="submit" />
       
 
       </div>
